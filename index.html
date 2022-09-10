@@ -178,7 +178,7 @@
           
           <div class="card-body">
             <img src="superbowl.png" >
-            <button type="button" class="w-100 btn btn-lg btn-primary">View Superbowl Dashboard</button>
+            <button type="button" data-toggle="modal" data-target="#modalSuperbowl" class="w-100 btn btn-lg btn-primary">View Superbowl Dashboard</button> 
           </div>
         </div>
       </div>
@@ -188,13 +188,8 @@
             <h4 class="my-0 fw-normal">Enterprise</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
+            <!-- <img src="https://public.tableau.com/#/views/SuperbowlOutcomes/final.png"> -->
+            <!-- <iframe frameborder="0" allowtransparency="true" allowfullscreen="true" title="Data Visualization" marginheight="0" marginwidth="0" scrolling="no" style="display: block; width: 1100px; height: 1127px; visibility: visible;" src="https://public.tableau.com/views/SuperbowlOutcomes/Final?%3Adisplay_static_image=y&amp;%3AbootstrapWhenNotified=true&amp;%3Aembed=true&amp;%3Alanguage=en-US&amp;:embed=y&amp;:showVizHome=n&amp;:apiID=host0#navType=1&amp;navSrc=Parse" data-dashlane-frameid="19979"></iframe> -->
             <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
           </div>
         </div>
@@ -202,7 +197,16 @@
       <div class="col"></div>
     </div>
 
-    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+    <div id="modalSuperbowl" class="hidden modal modal-tour position-static d-block bg-secondary py-5" style="height:'1100'; width:'1127'" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-body p-5">
+            <!-- <div class='tableauPlaceholder' id='viz1662784659560' style='position: relative'><noscript><a href='#'><img alt='NFL Superbowl Outcomes 1967-2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B8&#47;B8GNP4BD4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;B8GNP4BD4' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B8&#47;B8GNP4BD4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1662784659560');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1100px';vizElement.style.height='1127px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+            <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Great, thanks!</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
