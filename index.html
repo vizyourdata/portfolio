@@ -7,8 +7,18 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <!-- OR -->
+    <!-- Bootstrap JS Bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!--FONTS fonts.google.com-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     
@@ -28,7 +38,7 @@
   <body>
     
 
-    <nav class='navbar navbar-expand-sm navbar-dark' style="background-color: #ba4b34;">
+    <nav class='navbar navbar-expand-lg navbar-dark' style="background-color: #ba4b34;">
         <a class='navbar-brand' href="www.linkedin.com/in/ericsummers">Eric Summers</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,14 +46,14 @@
         <div id='navbarSupportedContent' class='collapse navbar-collapse'>
             <ul class='navbar-nav ml-auto'>
                 <li class='nav-item'>
-                <a class='nav-link' href="index.html">Travel</a> 
+                <a class='nav-link' href="#">Travel</a> 
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link' href="">Running</a> 
+                    <a class='nav-link' href="#">Running</a> 
                     <!-- add the marathon and ultra maps here -->
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link' href="">Random</a> 
+                    <a class='nav-link' href="#">Random</a> 
                 </li>
             </ul>
         </div>
@@ -54,7 +64,7 @@
         <div class='row'>
           <div class='col-12'>
               <h1>My Stack</h1>
-              <img class="img-fluid" width="150" height="150" src="tableau-logo.png" >
+              <img class="img-fluid" width="175" height="175" src="tableau-logo.png" >
               <img width="200" height="75" src="python1.png" >
               <img width="200" height="100" src="redshift.png" >
           </div>
@@ -65,35 +75,86 @@
     </div>
   <main>
     
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="row text-center">
       <div class="col"></div>
-      
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Superbowl Outcomes 1967-2019</h4>
+            <h4 class="my-0 fw-normal">Superbowl Outcomes</h4>
           </div>
           
           <div class="card-body">
             <img src="superbowl.png" >
-            <button type="button" data-toggle="modal" data-target="#modalSuperbowl" class="w-100 btn btn-lg btn-primary">View Dashboard</button> 
+                        <div id='modalSuperbowl' class="modal fade" tabindex="-1" style="display: none;" aria-hidden="true">
+                          <div class="modal-xl modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+
+
+
+
+
+                                  
+                                  <nav class="navbar navbar-light bg-light">
+                                    <div class="container-fluid">
+                                          <div class="row">
+                                            <div class="col-md-4">.col-md-4</div>
+                                            <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+                                            <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-sm-9">
+                                              Level 1: .col-sm-9
+                                              <div class="row">
+                                                <div class="col-8 col-sm-6">
+                                                  Level 2: .col-8 .col-sm-6
+                                                </div>
+                                                <div class="col-4 col-sm-6">
+                                                  Level 2: .col-4 .col-sm-6
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+
+                                      <form class="d-flex">
+                                        <p></p>
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                      </form>
+                                    </div>
+                                  </nav>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class='tableauPlaceholder' id='viz1663124264443' style='position: relative'><noscript><a href='#'><img alt='NFL Superbowl Outcomes 1967-2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7H&#47;7H4D6FC4C&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;7H4D6FC4C' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7H&#47;7H4D6FC4C&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1663124264443');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1100px';vizElement.style.height='1127px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                          </div>
+                          <!-- <iframe frameborder="0" allowtransparency="true" allowfullscreen="true" title="Data Visualization" marginheight="0" marginwidth="0" scrolling="no" style="display: block; width: 1100px; height: 1127px; visibility: visible;" src="https://public.tableau.com/views/SuperbowlOutcomes/Final?%3Adisplay_static_image=y&amp;%3AbootstrapWhenNotified=true&amp;%3Aembed=true&amp;%3Alanguage=en-US&amp;:embed=y&amp;:showVizHome=n&amp;:apiID=host0#navType=0&amp;navSrc=Parse" data-dashlane-frameid="198"></iframe> -->
+                                                  </div>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalSuperbowl" class="w-100 btn btn-lg btn-outline-success">View Dashboard</button> 
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
+            <h4 class="my-0 fw-normal">Hal Higdon Marathon Training</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+            <img src="higdon.png" >
+            <button type="button" class="w-100 btn btn-lg btn-outline-success">View Dashboard</button>
           </div>
         </div>
       </div>
@@ -111,22 +172,10 @@
       </div>
       <div class="col"></div>
     </div>
+<!-- Full screen modal -->
 
 
-    <div id="modalSuperbowl" class="modal fade modal-tour position-static d-block bg-secondary py-5" style="height:'1100'; width:'1127'" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-4 shadow">
-          <div class="modal-body p-5">
-            <div class='tableauPlaceholder' id='viz1662784659560' style='position: relative'><noscript><a href='#'><img alt='NFL Superbowl Outcomes 1967-2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B8&#47;B8GNP4BD4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;B8GNP4BD4' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B8&#47;B8GNP4BD4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1662784659560');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1100px';vizElement.style.height='1127px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    
 
 
 
